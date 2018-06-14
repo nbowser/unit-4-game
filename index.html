@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </head>
+
+    <body>
+
+        <header>
+            <h1 id="name">Crystals Collector!</h1>
+        </header>
+
+        <!--Instructions-->
+        <div class="instructions">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your toatal score.</p>
+            <p>You win the game by matching your total score to the random number, you lose the game if your total score goes over the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it, pay close attention to the total score when you click a crystal.</p>
+            <p>Every time when the game starts, the values of each crystal will change.</p>
+        </div>
+
+        <!--random number-->
+        <div class="start">
+                <div class="total">Random Number: </div>
+        <!--results-->
+            <div class="results">
+                    Wins: <div id="wins"></div>
+                    Losses:<div id="losses"></div>
+            </div>
+        </div>
+        <!--crystal icon/click buttons-->
+        <div class="crystals">
+                <img class="click" src="assets/images/red.png" id="red">
+                <img class="click" src="assets/images/blue.png" id="blue">
+                <img class="click" src="assets/images/yellow.png" id="yellow">
+                <img class="click" src="assets/images/green.png" id="green">
+        </div>
+
+        <!--guess counter-->
+        <div class="score">Your total score is:</div>
+
+        <div class="addition"></div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    </body>
+</html>
